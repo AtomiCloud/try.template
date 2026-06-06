@@ -1,0 +1,47 @@
+### AtomiCloud
+#### source: 1dcf99b7-867e-40aa-b378-bf6d569d51ea, 789d2d58-f910-4936-9475-0fbd938a30cd
+.kloop/
+
+### IDE
+#### source: 1dcf99b7-867e-40aa-b378-bf6d569d51ea, 789d2d58-f910-4936-9475-0fbd938a30cd
+*.swn
+*.swo
+*.swp
+.idea/
+.vscode/
+
+### Linux
+#### source: 1dcf99b7-867e-40aa-b378-bf6d569d51ea, 789d2d58-f910-4936-9475-0fbd938a30cd
+*~
+
+### macOS
+#### source: 1dcf99b7-867e-40aa-b378-bf6d569d51ea, 789d2d58-f910-4936-9475-0fbd938a30cd
+.DS_Store
+._*
+
+### Nix
+#### source: 1dcf99b7-867e-40aa-b378-bf6d569d51ea, 789d2d58-f910-4936-9475-0fbd938a30cd
+.direnv/
+result
+result-*
+
+### nix-init
+#### source: cddc0866-e5ef-4c99-9d10-7fa1c608da4e
+.direnv
+.pre-commit-config.yaml
+
+### Project
+#### source: 1dcf99b7-867e-40aa-b378-bf6d569d51ea, 789d2d58-f910-4936-9475-0fbd938a30cd
+.kagent/
+
+### Secrets
+#### source: 1dcf99b7-867e-40aa-b378-bf6d569d51ea, 789d2d58-f910-4936-9475-0fbd938a30cd
+*.tfvars
+.env
+.env.*
+.infisical.json
+
+### Windows
+#### source: 1dcf99b7-867e-40aa-b378-bf6d569d51ea, 789d2d58-f910-4936-9475-0fbd938a30cd
+Thumbs.db
+desktop.ini
