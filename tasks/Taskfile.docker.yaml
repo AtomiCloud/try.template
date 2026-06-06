@@ -1,15 +1,16 @@
 version: '3'
 vars:
   IMAGE: try-template:local
+  PORT: '3000'
 tasks:
   build:
     desc: 'Build the image locally (optional tag suffix via --, e.g. -- 1 -> :local-1)'
     cmds:
       - docker build -f infra/Dockerfile -t {{.IMAGE}}{{if .CLI_ARGS}}-{{.CLI_ARGS}}{{end}} .
   run:
-    desc: 'Run the built image (optional tag suffix via --)'
+    desc: 'Run the built image, publishing the server on localhost:{{.PORT}} (optional tag suffix via --)'
     cmds:
-      - docker run --rm {{.IMAGE}}{{if .CLI_ARGS}}-{{.CLI_ARGS}}{{end}}
+      - docker run --rm -p {{.PORT}}:3000 {{.IMAGE}}{{if .CLI_ARGS}}-{{.CLI_ARGS}}{{end}}
   dev:
     desc: 'Build then run the image (optional tag suffix via --)'
     cmds:
