@@ -1,1 +1,27 @@
 replicaCount: 1
+
+image:
+  # Image published by the Docker CI workflow.
+  repository: ghcr.io/atomicloud/try.template/try-template
+  pullPolicy: IfNotPresent
+  # Defaults to the chart appVersion, which CI sets to the matching image tag.
+  tag: ''
+
+# Container port the Bun server listens on.
+containerPort: 3000
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources: {}
+
+# HTTP probes hit the server's /healthz endpoint.
+livenessProbe:
+  httpGet:
+    path: /healthz
+    port: http
+readinessProbe:
+  httpGet:
+    path: /healthz
+    port: http
