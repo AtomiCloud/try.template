@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/AtomiCloud/try.template/compare/v1.1.0...v1.2.0) (2026-06-06)
+
+
+### ✨ Features ✨
+
+* add release callout to landing page ([350fdb0](https://github.com/AtomiCloud/try.template/commit/350fdb0d791ed5234f5ed8da7afbf2f28f6799a1))
+
 ## [1.1.0](https://github.com/AtomiCloud/try.template/compare/v1.0.0...v1.1.0) (2026-06-06)
 
 
