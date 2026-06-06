@@ -2,6 +2,7 @@
 with packages;
 {
   dev = [
+    bun
     git
     infisical
     pls
