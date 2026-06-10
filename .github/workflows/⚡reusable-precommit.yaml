@@ -10,7 +10,7 @@ jobs:
       - nscloud-cache-tag-atomi-nix-store-cache
     steps:
       - uses: actions/checkout@v6
-      - uses: AtomiCloud/actions.setup-nix@v2
+      - uses: AtomiCloud/actions.setup-nix@v3
         with:
           checkout: false
       - name: Run pre-commit
